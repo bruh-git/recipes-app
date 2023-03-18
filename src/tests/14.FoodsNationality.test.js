@@ -1,10 +1,10 @@
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import renderWithRouterAndContext from '../helpers/renderWithRouterAndContext';
-import fetchMock from '../../cypress/mocks/fetch';
-import mealsMock from '../../cypress/mocks/meals';
-import nationalitiesMock from '../../cypress/mocks/areas';
-import italianMealsMock from '../../cypress/mocks/italianMeals';
+import fetchMock from './mocks/fetch';
+import mealsMock from './mocks/meals';
+import nationalitiesMock from './mocks/areas';
+import italianMealsMock from './mocks/italianMeals';
 
 beforeEach(() => {
   global.fetch = jest.fn(fetchMock);

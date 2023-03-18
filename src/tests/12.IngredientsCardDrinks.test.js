@@ -1,8 +1,8 @@
 import { fireEvent, screen } from '@testing-library/react';
 import renderWithRouterAndContext from '../helpers/renderWithRouterAndContext';
-import fetchMock from '../../cypress/mocks/fetch';
-import drinksByIngredient from '../../cypress/mocks/drinksByIngredient';
-import drinks from '../../cypress/mocks/drinks';
+import fetchMock from './mocks/fetch';
+import drinksByIngredient from './mocks/drinksByIngredient';
+import drinks from './mocks/drinks';
 
 beforeEach(() => {
   global.fetch = jest.fn(fetchMock);

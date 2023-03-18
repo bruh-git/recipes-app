@@ -1,13 +1,13 @@
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import renderWithRouterAndContext from '../helpers/renderWithRouterAndContext';
-import fetchMock from '../../cypress/mocks/fetch';
-import ordinaryDrinks from '../../cypress/mocks/ordinaryDrinks';
-import cocktailDrinks from '../../cypress/mocks/cocktailDrinks';
-import milkDrinks from '../../cypress/mocks/milkDrinks';
-import otherDrinks from '../../cypress/mocks/otherDrinks';
-import cocoaDrinks from '../../cypress/mocks/cocoaDrinks';
-import drinks from '../../cypress/mocks/drinks';
+import fetchMock from './mocks/fetch';
+import ordinaryDrinks from './mocks/ordinaryDrinks';
+import cocktailDrinks from './mocks/cocktailDrinks';
+import milkDrinks from './mocks/milkDrinks';
+import otherDrinks from './mocks/otherDrinks';
+import cocoaDrinks from './mocks/cocoaDrinks';
+import drinks from './mocks/drinks';
 
 beforeEach(() => {
   global.fetch = jest.fn(fetchMock);

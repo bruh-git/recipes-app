@@ -1,6 +1,6 @@
 import { screen } from '@testing-library/react';
 import renderWithRouterAndContext from '../helpers/renderWithRouterAndContext';
-import fetchMock from '../../cypress/mocks/fetch';
+import fetchMock from './mocks/fetch';
 
 beforeEach(() => {
   global.fetch = jest.fn(fetchMock);
